@@ -7,6 +7,7 @@
     <link rel ="stylesheet" href="css/styles.css"/>
 </head>
     <body id="chat-screen">
+        <script src="./JS/index.js"></script>
         <div class ="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -14,7 +15,7 @@
             <!--To do : Wifi Icon-->
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span id="current_time"></span>
         </div>
         <div class="status-bar__column">
             <span>110%</span>
@@ -57,12 +58,33 @@
                 </div>
            </div>
 
-        </main>
+           <div class="message-row messsage-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">Hi! 안녕 난 민지야</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+       </div>
+    </main>
         
-
-
+    <form class="chat-reply">
+        <input type="text" id="chat-reply--text" placeholder="send message">
+        <div class="chat-reply-bottom">
+            <div class="chat-reply-img">
+                <span class="face-smile"><i class="fa-regular fa-face-smile"></i></span>
+                <span class="calendar"><i class="fa-regular fa-calendar"></i></span>
+                <span class="folder-closed"><i class="fa-regular fa-folder-closed"></i></span>
+                <span class="images"><i class="fa-regular fa-images"></i></span>
+            </div>
+            <div class="chat-reply-submit">
+                <input type="submit" id="chat-reply-submit" value="전송">
+            </div>
+        </div>
         
         
+    </form>
+  
     <script src="https://kit.fontawesome.com/5698851a5e.js" crossorigin="anonymous"></script>
         
     </body>
