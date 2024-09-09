@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel ="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+    <script src="./JS/index.js"></script>
+    <div class ="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!--To do : Wifi Icon-->
+        </div>
+        <div class="status-bar__column">
+            <span id="current_time"></span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <!--To do : 배터리 아이콘-->
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+            <!--To do : 충전 아이콘-->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <div class="user-header">
+        <div class="user-header-title">
+            <a href="../index.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+            <span id="user-header-title">전화번호를 입력해주세요</span>
+        </div>
+    </div>
+    <div>
+        <form action="#" method="get" id="register1-form">
+            
+            <label>
+                <span id="korean">+82</span>
+                <input type="tel" placeholder="'-'를 제외하고 입력해주세요.">
+                <input type="submit" value="인증번호 받기" id="tel-submit">
+            </label>
+
+            <label>
+                <input type="tel" placeholder="인증번호를 입력해주세요">
+                <input type="submit" value="확인">
+            </label>
+            
+            <input type="submit" value="확인"/>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/5698851a5e.js" crossorigin="anonymous"></script>
+</body>
+</html>

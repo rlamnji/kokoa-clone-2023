@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel ="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+    <script src="./JS/index.js"></script>
+    <div class ="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!--To do : Wifi Icon-->
+        </div>
+        <div class="status-bar__column">
+            <span id="current_time"></span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <!--To do : 배터리 아이콘-->
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+            <!--To do : 충전 아이콘-->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <div class="user-header">
+        <div class="user-header-title">
+            <a href="../index.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+            <span id="user-header-title">본인확인</span>
+        </div>
+    </div>
+    <div class="user-header-select">
+        <a href="#" id="select-1">내국인</a>
+        <a href="#" id="select-2">Foreigner</a>
+        <a href="#" id="select-3">인증실패안내</a>
+    </div>
+
+    <div>
+        <form action="register_phone.html" method="get" id="register-form">
+            <input name="username" type="text" placeholder="이름"/>
+            <input name="birthday" type="text" placeholder="생년월일(ex.19990101)"/>
+            <label>
+                <input type="radio" name="gender" value="male"> 남자
+                <input type="radio" name="gender" value="female"> 여자
+            </label>
+            <label>
+                <input type="radio" name="info" value="info"> 개인정보 수집 및 이용 동의
+            </label>
+            <input type="submit" value="확인"/>
+            <span id="register-info-bottom">NICE평가정보(주) 실명확인서비스(1600-1522)</span>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/5698851a5e.js" crossorigin="anonymous"></script>
+</body>
+</html>
