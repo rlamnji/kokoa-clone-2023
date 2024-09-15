@@ -7,7 +7,8 @@
     <link rel ="stylesheet" href="../css/styles.css"/>
 </head>
 <body>
-    <script src="./JS/index.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/register.js"></script>
     <div class ="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -41,12 +42,12 @@
     </div>
 
     <div>
-        <form action="register_phone.html" method="get" id="register-form">
+        <form action="register_phone.html" method="get" id="register-form" onsubmit="validateFormregister(event)">
             <input name="username" type="text" placeholder="이름"/>
             <input name="birthday" type="text" placeholder="생년월일(ex.19990101)"/>
             <label>
-                <input type="radio" name="gender" value="male"> 남자
-                <input type="radio" name="gender" value="female"> 여자
+                <input type="radio" name="gender" value="male" id="man"> 남자
+                <input type="radio" name="gender" value="female" id="woman"> 여자
             </label>
             <label>
                 <input type="radio" name="info" value="info"> 개인정보 수집 및 이용 동의

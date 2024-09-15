@@ -63,6 +63,11 @@
     font-size: 13px;
 }
 
+#woman{
+    margin-left: 200px;
+}
+
+
 #register-info-bottom{
     display: flex;
     justify-content: center;
