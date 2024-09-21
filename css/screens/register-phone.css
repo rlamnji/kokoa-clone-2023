@@ -38,8 +38,27 @@
 }
 
 #tel-submit{
+    border: 2px solid var(--yellow) !important;
+    width: 150px;
+
+    padding: 10px;
     background-color: white;
-    border-color: var(--yellow) !important;
+    margin-left: 20px;
+    font-weight: 600;
+    
+}
+
+#submit_num{
+    border: 2px solid var(--yellow) !important;
+    width: 80px;
+    background-color: white;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+#submit_last{
+    background-color: var(--yellow);
+    font-weight: 600;
 }
 
 #register1-form a{

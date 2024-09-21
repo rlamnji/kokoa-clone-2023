@@ -32,28 +32,29 @@
             <a href="../index.html">
                 <i class="fas fa-angle-left fa-2x"></i>
             </a>
-            <span id="user-header-title">본인확인</span>
+            <span id="user-header-title">Verify your identity</span>
         </div>
     </div>
     <div class="user-header-select">
         <a href="./register.html" id="select-1">내국인</a>
         <a href="./en_register.html" id="select-2">Foreigner</a>
-        <a href="#" id="select-3">인증실패안내</a>
+        <a href="#" id="select-3">Authentication failure</a>
     </div>
 
     <div>
         <form action="register_phone.html" method="get" id="register-form" onsubmit="validateFormregister(event)">
-            <input name="username" type="text" placeholder="이름"/>
-            <input name="birthday" type="text" placeholder="생년월일(ex.19990101)"/>
+            <input name="username" type="text" placeholder="name"/>
+            <input name="birthday" type="text" placeholder="birthday(ex.19990101)"/>
             <label>
-                <input type="radio" name="gender" value="male" id="man"> 남자
-                <input type="radio" name="gender" value="female" id="woman"> 여자
+                <input type="radio" name="gender" value="male" id="man"> male
+                <input type="radio" name="gender" value="female" id="woman"> female
             </label>
             <label>
-                <input type="radio" name="info" value="info"> 개인정보 수집 및 이용 동의
+                <input type="radio" name="info" value="info"> 
+                Consent to collection and use of personal information
             </label>
-            <input type="submit" value="확인"/>
-            <span id="register-info-bottom">NICE평가정보(주) 실명확인서비스(1600-1522)</span>
+            <input type="submit" value="submit"/>
+            <span id="register-info-bottom">NICE Evaluation Information Co., Ltd. Real name verification service (1600-1522)</span>
         </form>
     </div>
     <script src="https://kit.fontawesome.com/5698851a5e.js" crossorigin="anonymous"></script>
